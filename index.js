@@ -84,7 +84,7 @@ app.post("/signup",async(req,res)=>{
     }
 });
 
-app.get("/login",async(req,res)=>{
+app.post("/login",async(req,res)=>{
     try{
         let client = await mongoClient.connect(dbURL);
         let db = client.db("hackathon");
