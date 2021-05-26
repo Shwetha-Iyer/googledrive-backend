@@ -67,7 +67,7 @@ app.post("/signup",async(req,res)=>{
               });
             let info = await transporter.sendMail({
                 from: 'shwetha.iyer@hotmail.com', // sender address
-                to: "kimjenni.91@gmail.com", // list of receivers
+                to: `${req.body.email}`, // list of receivers
                 subject: "Activation link", // Subject line
                 text: "Hello, Please click on the link to activate your account ", // plain text body
                 html: `<a>${token}</a>`, // html body
