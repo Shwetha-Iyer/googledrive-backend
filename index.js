@@ -56,7 +56,7 @@ app.post("/signup",async(req,res)=>{
             
             //let testAccount = await nodemailer.createTestAccount();
             let transporter = nodemailer.createTransport({
-                host: "smtp.ethereal.email",
+                host: "smtp.office365.com",
                 service:"hotmail",
                 port: 587,
                 secure: false, // true for 465, false for other ports
